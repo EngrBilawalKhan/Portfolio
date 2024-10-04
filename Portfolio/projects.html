@@ -12,7 +12,9 @@
     <!-- Custom Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -24,8 +26,12 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
             <div class="container px-5">
-                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary text-gradient">Portfolio </span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary text-gradient">Portfolio
+                    </span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -40,35 +46,68 @@
         <section class="py-5">
             <div class="container px-5 mb-5">
                 <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Project Details </span></h1>
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- Project Card 1-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <h2 class="fw-bolder">Immersi Arch</h2>
-                                        <p>Immersi Arch was design and developed for Architecture Design This organization is working on exterior and interior design.</p>
-                                    </div>
-                                    <img class="img-fluid" src="assets/immersitect.jpg" alt="..." width="300" height="400">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Project Card 2-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <h2 class="fw-bolder">Immersio NFT</h2>
-                                        <p>
-                                            The aim of NFT (Non-Fungible Token) this websites is to provide a platform for creators, artists, and collectors to engage in the buying, selling, and showcasing of unique digital assets. </p>
-                                    </div>
-                                    <img class="img-fluid" src="assets/NFT web.jpg" alt="..." width="300" height="400" />
-                                </div>
-                            </div>
-                        </div>
+                   
+                   <!-- Project Card 2 -->
+<div class="card overflow-hidden shadow rounded-4 border-0">
+    <div class="card-body p-0">
+        <div class="row align-items-center">
+            <div class="col-md-6 p-5">
+                <h2 class="fw-bolder">Immersio NFT</h2>
+                <p>
+                    The aim of NFT (Non-Fungible Token) this websites is to provide a platform
+                    for creators, artists, and collectors to engage in the buying, selling, and
+                    showcasing of unique digital assets.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid m-auto p-4" src="assets/NFT web.jpg" alt="..." width="auto" height="auto" />
+            </div>
+        </div>
+
+        <!-- Carousel for bottom images -->
+        <div id="imageCarousel" class="carousel slide m-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col"><img class="img-fluid" src="assets/in1.jpg" alt="..." width="300" height="400" /></div>
+                        <div class="col"><img class="img-fluid" src="assets/in2.jpg" alt="..." width="300" height="400" /></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col"><img class="img-fluid" src="assets/in3.jpg" alt="..." width="300" height="400" /></div>
+                        <div class="col"><img class="img-fluid" src="assets/in4.jpg" alt="..." width="300" height="400" /></div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-md-6 p-5">
+                <h2 class="fw-bolder">Immersi Arch</h2>
+                <p>Immersi Arch was designed and developed for Architecture Design. This
+                    organization is working on exterior and interior design.</p>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid m-auto p-4" src="assets/immersitect.jpg" alt="..." width="auto" height="auto">
+            </div>
+        </div>
+    </div>
+</div>
+
+
                     </div>
                 </div>
             </div>
@@ -84,14 +123,18 @@
         </section>
     </main>
     <!-- Footer-->
+    <!-- Footer-->
     <footer class="bg-white py-4 mt-auto">
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                 <div class="col-auto">
-                    <div class="small m-0">Copyright &copy; <span class="copyRight">Engr Bilawal Khan 2023</span> </div>
+                    <div class="small m-0">
+                        Copyright &copy; <span class="copyRight">Engr Bilawal Khan <span id="currentYear"></span></span>
+                    </div>
                 </div>
                 <div class="col-auto">
-                    <a class="small" href="https://www.linkedin.com/in/engrbilawalkhanbilal/"><i class="bi bi-linkedin"></i></a>
+                    <a class="small" href="https://www.linkedin.com/in/engrbilawalkhanbilal/"><i
+                            class="bi bi-linkedin"></i></a>
                     <span class="mx-1">&middot;</span>
                     <a class="small" href="https://twitter.com/EngrBilawalKhan"><i class="bi bi-twitter"></i></a>
                     <span class="mx-1">&middot;</span>
@@ -102,8 +145,17 @@
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+    <!-- Auto Typing JS-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/scripts.js"></script>
+    <!-- aos animation js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(1200);
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 </body>
 
 </html>

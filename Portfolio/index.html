@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -63,7 +62,7 @@
                             <div class="profile bg-gradient-primary-to-secondary animate__animated animate__flipInX">
                                 <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
                                 <!-- Watch a tutorial on how to do this on YouTube (link)-->
-                                <img class="profile-img" src="assets/profile.png" alt="..." />
+                                <img class="profile-img" src="assets/Profile.jpg" alt="..." />
                                 <div class="dots-1">
                                     <!-- SVG Dots-->
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
@@ -182,6 +181,54 @@
                 </div>
             </div>
         </header>
+        <!-- Project Section  -->
+        <section class="bg-light ">
+            <div class="container">.
+                <div class="text-center my-5">
+                    <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline" data-aos="zoom-out-left">Projects</span></h2>                                         
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4" id="card-container">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/fr1.jpg" class="card-img-top" alt="Skyscrapers"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Fitness Room</h5>
+                                <p class="card-text">
+                                    Discover our Fitness Room, where cutting-edge equipment meets energizing classes for all levels. Join a supportive community dedicated to health and wellness. Transform your fitness journey in an inspiring space!
+                                    </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted last-updated">Last updated</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/s1.jpg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Spherical</h5>
+                                <p class="card-text"> Welcome to Spherical Digital Creatives, where imagination meets innovation! We specialize in crafting stunning digital experiences that elevate your brand. Let us bring your vision to life with our creative expertise and cutting-edge solutions!</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted last-updated">Last updated</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/in1.jpg" class="card-img-top" alt="Palm Springs Road"/>
+                            <div class="card-body">
+                                <h5 class="card-title">ImmersioNFT</h5>
+                                <p class="card-text"> Welcome to ImmersioNFT, your gateway to the world of unique digital assets! Explore a curated collection of captivating NFTs that blend artistry and technology. Join us in revolutionizing ownership and creativity in the digital space!</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted last-updated">Last updated</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
         <!-- About Section-->
         <section class="bg-light py-5">
             <div class="container px-5">
@@ -208,9 +255,19 @@
     <footer class="bg-white py-4 mt-auto">
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
-                    <div class="small m-0">Copyright &copy; <span class="copyRight">Engr Bilawal Khan 2023</span> </div>
+                <div class="col-auto"> 
+                    <div class="small m-0">
+                        Copyright &copy; <span class="copyRight">Engr Bilawal Khan <span id="currentYear"></span></span>
+                    </div>
                 </div>
+                
+                <script>
+                    // Get the current year
+                    const currentYear = new Date().getFullYear();
+                    // Set the current year in the span
+                    document.getElementById('currentYear').textContent = currentYear;
+                </script>
+                
                 <div class="col-auto">
                     <a class="small" href="https://www.linkedin.com/in/engrbilawalkhanbilal/"><i class="bi bi-linkedin"></i></a>
                     <span class="mx-1">&middot;</span>
@@ -234,6 +291,7 @@
             duration: 1200,
         })
     </script>
+    
 </body>
 
 </html>
